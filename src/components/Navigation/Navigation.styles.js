@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const NavigationWrapper = styled.nav`
-  font-family: 'Teko', Arial, Helvetica, sans-serif;
+export const Wrapper = styled.nav`
+  font-family: "Teko", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   color: #212121;
   font-size: 1rem;

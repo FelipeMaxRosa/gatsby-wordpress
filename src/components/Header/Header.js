@@ -8,6 +8,7 @@ import { Wrapper, Content } from "./Header.styles";
 const Header = () => {
   const { site, menu } = useMenuQuery();
   console.log({ site, menu });
+  // stopped at 1:51:54
 
   return (
     <Wrapper>

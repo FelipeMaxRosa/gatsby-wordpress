@@ -5,13 +5,17 @@ export const useCTAAreaQuery = () => {
     fragment ctaImage on WpMediaItem {
       localFile {
         childImageSharp {
-          gatsbyImageData(width: 720, layout: CONSTRAINED, placeholder: TRACED_SVG)
+          gatsbyImageData(
+            width: 720
+            layout: CONSTRAINED
+            placeholder: TRACED_SVG
+          )
         }
       }
     }
 
     query CTAQuery {
-      cta: wpPage(databaseId: {eq: 47}) {
+      cta: wpPage(databaseId: { eq: 47 }) {
         ACF_HomePage {
           cta1Link
           cta1Text
@@ -30,8 +34,8 @@ export const useCTAAreaQuery = () => {
           }
         }
       }
-    }`
-  );
+    }
+  `);
 
   return data;
-}
+};
